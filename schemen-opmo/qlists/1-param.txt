@@ -1,0 +1,589 @@
+# cue 1;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.98 3 7; 
+1-fm2 1 2.72 3 7;
+1-noise-q 1000;
+1-synth-mix 0.0;
+1-env-curve 2;
+
+# cue 2;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.32 3 7; 
+1-fm2 1 2.71 3 7;
+1-noise-q 1000;
+1-synth-mix 0.01724138;
+1-env-curve 2;
+
+# cue 3;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.6 3 7; 
+1-fm2 1 2.96 3 7;
+1-noise-q 1000;
+1-synth-mix 0.03448276;
+1-env-curve 2;
+
+# cue 4;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.41 3 7; 
+1-fm2 1 2.56 3 7;
+1-noise-q 1000;
+1-synth-mix 0.05172414;
+1-env-curve 2;
+
+# cue 5;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.45 3 7; 
+1-fm2 1 2.42 3 7;
+1-noise-q 1000;
+1-synth-mix 0.06896552;
+1-env-curve 2;
+
+# cue 6;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.17 3 7; 
+1-fm2 1 2.08 3 7;
+1-noise-q 1000;
+1-synth-mix 0.0862069;
+1-env-curve 2;
+
+# cue 7;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.67 3 7; 
+1-fm2 1 2.18 3 7;
+1-noise-q 1000;
+1-synth-mix 0.10344828;
+1-env-curve 2;
+
+# cue 8;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.47 3 7; 
+1-fm2 1 2.89 3 7;
+1-noise-q 1000;
+1-synth-mix 0.12068965;
+1-env-curve 2;
+
+# cue 9;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.35 3 7; 
+1-fm2 1 2.53 3 7;
+1-noise-q 1000;
+1-synth-mix 0.13793104;
+1-env-curve 2;
+
+# cue 10;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.79 3 7; 
+1-fm2 1 2.42 3 7;
+1-noise-q 1000;
+1-synth-mix 0.15517241;
+1-env-curve 2;
+
+# cue 11;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.6 3 7; 
+1-fm2 1 2.89 3 7;
+1-noise-q 1000;
+1-synth-mix 0.1724138;
+1-env-curve 2;
+
+# cue 12;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.32 3 7; 
+1-fm2 1 2.99 3 7;
+1-noise-q 1000;
+1-synth-mix 0.18965517;
+1-env-curve 2;
+
+# cue 13;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.11 3 7; 
+1-fm2 1 2.71 3 7;
+1-noise-q 1000;
+1-synth-mix 0.20689656;
+1-env-curve 2;
+
+# cue 14;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.07 3 7; 
+1-fm2 1 2.67 3 7;
+1-noise-q 1000;
+1-synth-mix 0.22413793;
+1-env-curve 2;
+
+# cue 15;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.11 3 7; 
+1-fm2 1 2.19 3 7;
+1-noise-q 1000;
+1-synth-mix 0.2413793;
+1-env-curve 2;
+
+# cue 16;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.02 3 7; 
+1-fm2 1 2.77 3 7;
+1-noise-q 1000;
+1-synth-mix 0.25862068;
+1-env-curve 2;
+
+# cue 17;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.16 3 7; 
+1-fm2 1 2.96 3 7;
+1-noise-q 1000;
+1-synth-mix 0.27586207;
+1-env-curve 2;
+
+# cue 18;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.6 3 7; 
+1-fm2 1 2.14 3 7;
+1-noise-q 1000;
+1-synth-mix 0.29310346;
+1-env-curve 2;
+
+# cue 19;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.91 3 7; 
+1-fm2 1 2.03 3 7;
+1-noise-q 1000;
+1-synth-mix 0.31034482;
+1-env-curve 2;
+
+# cue 20;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.36 3 7; 
+1-fm2 1 2.87 3 7;
+1-noise-q 1000;
+1-synth-mix 0.3275862;
+1-env-curve 2;
+
+# cue 21;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.35 3 7; 
+1-fm2 1 2.51 3 7;
+1-noise-q 1000;
+1-synth-mix 0.3448276;
+1-env-curve 2;
+
+# cue 22;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.52 3 7; 
+1-fm2 1 2.74 3 7;
+1-noise-q 1000;
+1-synth-mix 0.36206895;
+1-env-curve 2;
+
+# cue 23;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.18 3 7; 
+1-fm2 1 2.95 3 7;
+1-noise-q 1000;
+1-synth-mix 0.37931034;
+1-env-curve 2;
+
+# cue 24;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.5 3 7; 
+1-fm2 1 2.34 3 7;
+1-noise-q 1000;
+1-synth-mix 0.39655173;
+1-env-curve 2;
+
+# cue 25;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.62 3 7; 
+1-fm2 1 2.55 3 7;
+1-noise-q 1000;
+1-synth-mix 0.41379312;
+1-env-curve 2;
+
+# cue 26;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.49 3 7; 
+1-fm2 1 2.15 3 7;
+1-noise-q 1000;
+1-synth-mix 0.43103448;
+1-env-curve 2;
+
+# cue 27;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.13 3 7; 
+1-fm2 1 2.26 3 7;
+1-noise-q 1000;
+1-synth-mix 0.44827586;
+1-env-curve 2;
+
+# cue 28;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.49 3 7; 
+1-fm2 1 2.62 3 7;
+1-noise-q 1000;
+1-synth-mix 0.46551725;
+1-env-curve 2;
+
+# cue 29;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.02 3 7; 
+1-fm2 1 2.31 3 7;
+1-noise-q 1000;
+1-synth-mix 0.4827586;
+1-env-curve 2;
+
+# cue 30;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.74 3 7; 
+1-fm2 1 2.87 3 7;
+1-noise-q 1000;
+1-synth-mix 0.5;
+1-env-curve 2;
+
+# cue 31;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.44 3 7; 
+1-fm2 1 2.92 3 7;
+1-noise-q 1000;
+1-synth-mix 0.51724136;
+1-env-curve 2;
+
+# cue 32;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.06 3 7; 
+1-fm2 1 2.51 3 7;
+1-noise-q 1000;
+1-synth-mix 0.5344828;
+1-env-curve 2;
+
+# cue 33;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.42 3 7; 
+1-fm2 1 2.34 3 7;
+1-noise-q 1000;
+1-synth-mix 0.55172414;
+1-env-curve 2;
+
+# cue 34;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.41 3 7; 
+1-fm2 1 2.1 3 7;
+1-noise-q 1000;
+1-synth-mix 0.5689655;
+1-env-curve 2;
+
+# cue 35;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.16 3 7; 
+1-fm2 1 2.13 3 7;
+1-noise-q 1000;
+1-synth-mix 0.5862069;
+1-env-curve 2;
+
+# cue 36;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.69 3 7; 
+1-fm2 1 2.15 3 7;
+1-noise-q 1000;
+1-synth-mix 0.6034483;
+1-env-curve 2;
+
+# cue 37;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.08 3 7; 
+1-fm2 1 2.91 3 7;
+1-noise-q 1000;
+1-synth-mix 0.62068964;
+1-env-curve 2;
+
+# cue 38;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.49 3 7; 
+1-fm2 1 2.76 3 7;
+1-noise-q 1000;
+1-synth-mix 0.63793105;
+1-env-curve 2;
+
+# cue 39;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.58 3 7; 
+1-fm2 1 2.48 3 7;
+1-noise-q 1000;
+1-synth-mix 0.6551724;
+1-env-curve 2;
+
+# cue 40;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.47 3 7; 
+1-fm2 1 2.73 3 7;
+1-noise-q 1000;
+1-synth-mix 0.67241377;
+1-env-curve 2;
+
+# cue 41;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.38 3 7; 
+1-fm2 1 2.41 3 7;
+1-noise-q 1000;
+1-synth-mix 0.6896552;
+1-env-curve 2;
+
+# cue 42;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.98 3 7; 
+1-fm2 1 2.37 3 7;
+1-noise-q 1000;
+1-synth-mix 0.70689655;
+1-env-curve 2;
+
+# cue 43;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.68 3 7; 
+1-fm2 1 2.57 3 7;
+1-noise-q 1000;
+1-synth-mix 0.7241379;
+1-env-curve 2;
+
+# cue 44;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.67 3 7; 
+1-fm2 1 2.12 3 7;
+1-noise-q 1000;
+1-synth-mix 0.7413793;
+1-env-curve 2;
+
+# cue 45;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.94 3 7; 
+1-fm2 1 2.55 3 7;
+1-noise-q 1000;
+1-synth-mix 0.7586207;
+1-env-curve 2;
+
+# cue 46;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.01 3 7; 
+1-fm2 1 2.93 3 7;
+1-noise-q 1000;
+1-synth-mix 0.7758621;
+1-env-curve 2;
+
+# cue 47;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.49 3 7; 
+1-fm2 1 2.3 3 7;
+1-noise-q 1000;
+1-synth-mix 0.79310346;
+1-env-curve 2;
+
+# cue 48;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.5 3 7; 
+1-fm2 1 2.33 3 7;
+1-noise-q 1000;
+1-synth-mix 0.8103448;
+1-env-curve 2;
+
+# cue 49;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.17 3 7; 
+1-fm2 1 2.23 3 7;
+1-noise-q 1000;
+1-synth-mix 0.82758624;
+1-env-curve 2;
+
+# cue 50;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.94 3 7; 
+1-fm2 1 2.27 3 7;
+1-noise-q 1000;
+1-synth-mix 0.8448276;
+1-env-curve 2;
+
+# cue 51;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.72 3 7; 
+1-fm2 1 2.81 3 7;
+1-noise-q 1000;
+1-synth-mix 0.86206896;
+1-env-curve 2;
+
+# cue 52;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.09 3 7; 
+1-fm2 1 2.67 3 7;
+1-noise-q 1000;
+1-synth-mix 0.87931037;
+1-env-curve 2;
+
+# cue 53;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.9 3 7; 
+1-fm2 1 2.87 3 7;
+1-noise-q 1000;
+1-synth-mix 0.8965517;
+1-env-curve 2;
+
+# cue 54;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.24 3 7; 
+1-fm2 1 2.94 3 7;
+1-noise-q 1000;
+1-synth-mix 0.9137931;
+1-env-curve 2;
+
+# cue 55;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.06 3 7; 
+1-fm2 1 2.29 3 7;
+1-noise-q 1000;
+1-synth-mix 0.9310345;
+1-env-curve 2;
+
+# cue 56;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.14 3 7; 
+1-fm2 1 2.99 3 7;
+1-noise-q 1000;
+1-synth-mix 0.94827587;
+1-env-curve 2;
+
+# cue 57;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.29 3 7; 
+1-fm2 1 2.88 3 7;
+1-noise-q 1000;
+1-synth-mix 0.9655172;
+1-env-curve 2;
+
+# cue 58;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.11 3 7; 
+1-fm2 1 2.41 3 7;
+1-noise-q 1000;
+1-synth-mix 0.98275865;
+1-env-curve 2;
+
+# cue 59;
+0
+1-selfm2 0;
+1-addfreq 1;
+1-fm1 1 2.36 3 7; 
+1-fm2 1 2.01 3 7;
+1-noise-q 1000;
+1-synth-mix 1.0;
+1-env-curve 2

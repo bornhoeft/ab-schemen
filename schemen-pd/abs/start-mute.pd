@@ -1,0 +1,13 @@
+#N canvas 353 378 394 486 12;
+#X obj 100 117 cnv 16 180 179 empty empty empty 20 12 0 10 #9f9f9f #404040 0;
+#X obj 100 100 cnv 15 180 16 empty empty empty 50 8 0 11 #404040 #ffffff 0;
+#X obj 114 197 tgl 30 0 audio-on-off mute-dummy Audio 0 -10 0 10 #c6ffc7 #ff0400 #000000 0 1;
+#X obj 113 250 tgl 30 0 start-stop mute-dummy Start 0 -10 0 10 #c6ffc7 #ff0400 #000000 0 1;
+#X obj 113 145 tgl 30 0 ch-setup ch-dummy Channels 0 -10 0 10 #c6ffc7 #ff0400 #000000 0 2;
+#X obj 151 246 cnv 19 120 20 empty empty Start/stop\ sequencing 3 12 0 8 #bbbbbb #000000 0;
+#X obj 151 262 cnv 19 120 20 empty empty from\ the\ beginning 3 12 0 8 #bbbbbb #000000 0;
+#X obj 148 194 cnv 19 120 20 empty empty DSP\ on/off\ -\ MUTE 3 12 0 8 #bbbbbb #000000 0;
+#X obj 148 211 cnv 19 120 20 empty empty Fader\ default\ positions 3 12 0 8 #bbbbbb #000000 0;
+#X obj 149 142 cnv 19 120 20 empty empty Unchecked:\ 4\ in\ /\ 2\ out 3 12 0 8 #bbbbbb #000000 0;
+#X obj 149 159 cnv 19 120 20 empty empty Checked:\ 4\ in\ /\ 4\ out 3 12 0 8 #bbbbbb #000000 0;
+#X coords 0 -1 1 1 180 195 2 100 100;

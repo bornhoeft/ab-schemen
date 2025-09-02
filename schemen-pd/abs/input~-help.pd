@@ -1,0 +1,12 @@
+#N canvas 1116 438 463 343 12;
+#X obj 27 307 dac~;
+#X obj 193 130 input~ 1 Clarinet;
+#X obj 28 66 input~ 1 Clarinet 1;
+#X text 192 112 abstraction with no gui;
+#X text 32 41 creation: [input~ <chan#> <instrument> <gui on/off (0-1)>];
+#X text 32 20 [input~] module;
+#X text 167 301 (c) 2007/2024 AChim Bornhoeft;
+#X obj 28 277 *~ 0.25;
+#X connect 2 0 7 0;
+#X connect 7 0 0 0;
+#X connect 7 0 0 1;

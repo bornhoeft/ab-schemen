@@ -1,0 +1,7 @@
+#N canvas 1211 342 565 249 12;
+#X text 36 21 [cuelist];
+#X obj 40 112 cuelist 1 1-qlist.txt;
+#X text 213 111 [cuelist 1 1-qlist.txt];
+#X text 124 21 A automatic stepper for timestamps with qlist \; Creation: [cuelist <channel> <name of cuelist file>] \;;
+#X text 213 147 space -> \$1 = start/stop automatic sequencing r = reset to first line \; q = read qlist file \; set = insert number (from 0) in qlist \;;
+#X coords 0 0 1 1 200 80 0;

@@ -1,0 +1,12 @@
+#N canvas 1326 513 251 240 10;
+#X obj 98 116 guilabel label;
+#X obj 68 56 hsl 128 15 0 100 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 3900 1;
+#X obj 67 182 hsl 128 15 0 127 0 0 label-r label-s label:30.71 25 8
+0 10 -262144 -1 -1 3071 1;
+#X obj 65 90 s label-s;
+#X obj 64 142 r label-r;
+#X connect 0 0 3 0;
+#X connect 1 0 3 0;
+#X connect 4 0 0 0;
+#X connect 4 0 2 0;

@@ -1,0 +1,709 @@
+;;; ---------------------------------------------------------
+;;; 4th string quartet
+;;; Schemen
+;;; (c) 2023 - 2025 Achim Bornhoeft
+;;;
+;;; Creation of qlists for Pure Data sequencing:
+;;;
+;;; Information available at: bornhoeft.org/works/schemen
+;;;
+;;; 23.08. - 31.8.2025
+;;; ---------------------------------------------------------
+
+#|
+This document creates the following qlist text files for 
+sequencing in Pure Data:
+
+4 files for each voice with the durations between each cue:
+
+1-qlist.txt
+2-qlist.txt
+3-qlist.txt
+4-qlist.txt
+
+4 files for each voice with the parameter settings per cue
+
+1-param.txt
+2-param.txt
+3-param.txt
+4-param.txt
+
+8 files for spatialisation of 
+4 direct sound sources and
+4 processed sound sources.
+
+1-spat.txt
+2-spat.txt
+3-spat.txt
+4-spat.txt
+5-spat.txt
+6-spat.txt
+7-spat.txt
+8-spat.txt
+|#
+
+;; ----------------------------------------------------------
+;; General Calculations
+;; ----------------------------------------------------------
+
+#|
+Measures: 32
+Quarters: 32 * 4 = 128
+
+The piece can be played in different tempi:
+
+MM 60/8 = 7,5 sec / quarter = 128 * 7,5 = 960 sec = 16 min
+MM 60/7,5 = 8 sec / quarter = 128 * 8 = 1024 sec = 17 min 4 sec
+MM 60/6 = 10 sec / quarter = 128 * 10 = 1280 sec = 21 min 20 sec
+MM 60/5 = 12 sec / quarter = 128 * 12 = 1536 sec = 25 min 36 sec
+MM 60/4 = 15 sec / quarter = 128 * 15 = 1920 sec = 32 min
+
+8 Rehearsal marks every 4 measures = 16 quarters = 8 sections
+|#
+
+;;; This document works with MM 6 = 10 sec/quarter = 1280 sec
+
+;; ----------------------------------------------------------
+;; Musical Source
+;; ----------------------------------------------------------
+
+;;; Franz Schubert, String Quartet No. 14 in D minor, D. 810
+;;; Second movement, Andante con moto, "Death and the Maiden"
+;;; Measures 1 to 32
+
+;; import of the score (Preview with cmd-2)
+(assign-variable 'voc
+(setf 
+ material
+ (musicxml-to-omn 
+  "~/Documents/werke/090-Blickwinkel/sco/schubert-D810-2.musicxml")))
+
+;; number of voices (4: string quartet)
+(setf no-voc (length material))
+
+;; ----------------------------------------------------------
+;; Durations
+;; 8 sections for rehearsal marks at every 16 quarter
+;; ----------------------------------------------------------
+
+;; duration of one section in seconds
+;; number of quarters * duration of quarter (sec)
+(setf quarter-dur 10)
+(setf sec-dur (* 16 quarter-dur))
+
+(defun step-lst (start end steps &key (round t))
+
+"distribute n steps between start and end
+ex.
+(step-lst 5 25 10) => (5 7 9 12 14 16 18 21 23 25)
+(step-lst 5 25 4 :round nil) => (5.0 11.666667 18.333334 25.0)"
+
+  (let ((norm (gen-transition 0 1 steps 1))
+        (range (- end start)))
+    (loop for i in norm
+          for numb = (+ start (* i range))
+          if round
+            collect (round numb)
+          else
+            collect numb)))
+
+(progn ; all sections
+  (setf sec1-durs
+        ;; Section 1
+        ;; study number 1, start in measure 1
+        (loop with seed = (init-seed 1966)
+              with durs = (rnd-sum-to-size 
+                           ;; 4 random durations per section
+                           ;; summing up to the section duration
+                           sec-dur 4
+                           ;; between 35 and 45 sec
+                           ;; (35 37 39 41 43 45)
+                           (step-lst 35 45 6))           
+              for i downfrom 0
+              repeat no-voc
+              collect (gen-rotate i durs)))
+
+  (setf sec2-durs
+        ;; Section 2
+        ;; study number 2, start in measure 41
+        (loop with seed = (init-seed 1914)
+              with durs = (rnd-sum-to-size 
+                           sec-dur 5
+                           (step-lst 20 35 8))           
+              for i downfrom 0 repeat no-voc
+              collect (gen-rotate i durs)))
+                            
+  (setf sec3-durs
+        ;; Section 3
+        ;; study number 3, start in measure 81
+        (loop with seed = (init-seed 1789)
+              with durs = (rnd-sum-to-size 
+                           sec-dur 7
+                           (step-lst 15 26 8))           
+              for i downfrom 0 repeat no-voc
+              collect (gen-rotate i durs)))
+
+  (setf sec4-durs
+        ;; Section 4
+        ;; study number 4, start in measure 121
+        (loop with seed = (init-seed 1968)
+              with durs = (rnd-sum-to-size 
+                           sec-dur 10
+                           (step-lst 10 22 11))           
+              for i downfrom 0 repeat no-voc
+              collect (gen-rotate i durs)))     
+
+  (setf sec5-durs
+        ;; Section 5
+        ;; study number 5, start in measure 161
+        (loop with seed = (init-seed 1933)
+              with durs = (rnd-sum-to-size 
+                           sec-dur 14
+                           (step-lst 8 18 12))           
+              for i downfrom 0 repeat no-voc
+              collect (gen-rotate i durs)))
+
+  (setf sec6-durs
+        ;; Section 6
+        ;; study number 6, start in measure 201
+        (loop with seed = (init-seed 1989)
+              with durs = (rnd-sum-to-size 
+                           sec-dur 9
+                           (step-lst 10 26 11))           
+              for i downfrom 0 repeat no-voc
+              collect (gen-rotate i durs)))
+
+  (setf sec7-durs
+        ;; Section 7
+        ;; study number 7, start in measure 241
+        (loop with seed = (init-seed 2001)
+              with durs = (rnd-sum-to-size 
+                           sec-dur 6
+                           (step-lst 20 35 18))           
+              for i downfrom 0 repeat no-voc
+              collect (gen-rotate i durs)))
+
+  (setf sec8-durs
+        ;; Section 8
+        ;; study number 8, start in measure 281 (end 320)
+
+        (loop with seed = (init-seed 1958)
+              with durs = (rnd-sum-to-size 
+                           sec-dur 4
+                           (step-lst 35 45 7))           
+              for i downfrom 0 repeat no-voc
+              collect (gen-rotate i durs)))
+
+  ;; combine all sections in one list
+  (setf all-durs
+        (list sec1-durs sec2-durs sec3-durs sec4-durs
+              sec5-durs sec6-durs sec7-durs sec8-durs))
+
+  ;; convert to one list per voice
+  (setf voc-durs
+        (mcflatten
+         (matrix-transpose all-durs)))
+
+  ;; length of duration list to calculate 
+  ;; the number of cues per parameter (59 each)
+  (assign-variable 'dlen
+                   (setf durs-len
+                         (loop for i in voc-durs
+                               collect (length i))))
+
+  ;; check if voices in each section have the same duration
+  (loop for i in all-durs 
+        collect
+          (loop for j in i
+                collect (find-sum j)))
+  ) ; end progn
+
+;; ----------------------------------------------------------
+;; Cues in common notation
+;; convert seconds to quarters in MM 60
+;; durations converted to 1/16 plus rest
+;; ----------------------------------------------------------
+
+;; convert seconds to quarters
+(progn
+(setf voc-durs-quarter
+      (loop for i in voc-durs
+            collect
+            (loop for j in i
+                  collect (/ j 4))))
+
+;; durations converted to 1/16 plus rest
+;; preview cues with cmd-2
+(setf cues-notation
+(loop for i in voc-durs-quarter
+      collect (length-staccato i)))
+
+;; stretch the durations of the material
+(setf augmented-material (length-augmentation 10 material))
+
+;; preview cues and augmented-material with cmd-2
+(loop for i in cues-notation
+      for j in augmented-material
+      collect i
+      collect j)
+) ; end progn
+
+;; ----------------------------------------------------------
+;; Pure Data duration qlist files
+;; ----------------------------------------------------------
+
+(progn ; make duration qlist files
+;; for PD qlist these values have to be 
+;; converted to milliseconds
+(assign-variable 'dmsecs
+(setf durs-msecs
+      (loop for i in voc-durs
+            collect
+            (loop for j in i
+                  collect (* 1000 j)))))
+
+;; leading number set to 0
+;; (sequencing is controlled by delay)
+(setf 1-wait (loop repeat dlen1 collect (list 0 '1-wait)))
+(setf 2-wait (loop repeat dlen2 collect (list 0 '2-wait)))
+(setf 3-wait (loop repeat dlen3 collect (list 0 '3-wait)))
+(setf 4-wait (loop repeat dlen4 collect (list 0 '4-wait)))
+
+;; numbering of cues
+(setf 1-line (gen-integer 0 (- dlen1 1)))
+(setf 2-line (gen-integer 0 (- dlen2 1)))
+(setf 3-line (gen-integer 0 (- dlen3 1)))
+(setf 4-line (gen-integer 0 (- dlen4 1)))
+
+;; combine leading number, qlist name, duration values
+;; and the numbering of cues into lists
+(setf send-val-1 (flatten (matrix-transpose 
+                           (list 1-wait dmsecs1 1-line))))
+(setf send-val-2 (flatten (matrix-transpose 
+                           (list 2-wait dmsecs2 2-line))))
+(setf send-val-3 (flatten (matrix-transpose 
+                           (list 3-wait dmsecs3 3-line))))
+(setf send-val-4 (flatten (matrix-transpose 
+                           (list 4-wait dmsecs4 4-line))))
+
+;; all qlists
+(setf qlist-lists 
+      (list send-val-1 send-val-2 send-val-3 send-val-4))
+
+;; ----------------------------------------------------------
+;; Write lists in separate qlist textfiles (to Desktop)
+;; ----------------------------------------------------------
+
+(loop for i in qlist-lists
+      for n from 1
+      do
+        (with-open-file 
+            (stream  
+             (concatenate 'string "~/Desktop/" 
+                          (write-to-string n) "-qlist.txt")
+             :direction :output
+             :if-exists :new-version)
+          (format stream  (format nil "~{~a ~a ~a ~a~^;~%~};" i))))
+) ; progn end
+
+;; ----------------------------------------------------------
+;; Parameter lists for each cue and instrument
+;; ----------------------------------------------------------
+
+#|
+;; frequency tracking ch1 - ch4
+;; 1-freq - 4-freq
+;; automatically calculated
+
+freq comb for fm
+0 = + n Hz; 1 = f1 + f2 ;2 = abs (f1 - f2)
+1-selfm2 - 4-selfm2
+
+added freq to freq1 (only in selfm2 mode 0)
+1-addfreq - 4-addfreq
+
+parameter for fm1
+;; carPartial (mult), modPartial (mult), index, lfo-freq
+;; e.g. 1 2.42 3 7
+1-fm1 - 4-fm1
+
+parameter for fm2
+;; carPartial (mult), modPartial (mult), index, lfo-freq
+;; e.g. 1 2.42 3 7
+1-fm2 - 4-fm2
+
+filter-q for noise synthesis
+1-noise-q - 4-noise-q
+
+mix between osc~ and noise-synthesis
+1-synth-mix - 4-synth-mic
+
+envelope curve
+1-env-curve - 4-env-curve
+|#
+
+(defun number-name (num string)
+  (read-from-string
+   (concatenate 'string 
+                (write-to-string num)
+                string)))
+
+;; ----------------------------------------------------------
+;; Length of duration list to calculate 
+;; the number of cues per parameter
+;; ----------------------------------------------------------
+
+;; number of cues per voice
+(setf durlens (list dlen1 dlen2 dlen3 dlen4))
+
+;; Transitions of mix between osc~ and noise-synthesis
+;; (list-plot
+ (setf synth-mix
+       (loop for i in durlens
+             for c in '(1 1.5 2 2.5)
+             collect (gen-transition 0 1.0 i c)))
+;; :point-radius 2 :join-points t)
+
+;; combine all parameters for qlist file
+(setf param-lsts
+      (loop for i from 1 to 4
+            for j in durlens
+            for sm in synth-mix
+            collect 
+              (loop 
+                 repeat j
+                 for k from 1
+                 for s from 0
+
+                 append (list '\# 'Cue k)  
+                 collect 0
+                 append (list (number-name i "-selfm2") 0)
+                 append (list (number-name i "-addfreq") 1)
+                 append (list (number-name i "-fm1") 
+                              1 ; carPartial (mult),
+                              (read-from-string  ;modPartial (mult)
+                               (format nil "~,2F" 
+                                       (+ 2 
+                                          (/ (random 100) 100.0)))) 
+                              3 7) ; index, lfo-freq
+                 append (list (number-name i "-fm2")
+                              1 
+                              (read-from-string
+                                 (format nil "~,2F"
+                                         (+ 2 
+                                            (/ (random 100) 100.0)))) 
+                              3 7)
+                 append (list (number-name i "-noise-q") 1000)
+                 append (list (number-name i "-synth-mix") (nth s sm))
+                 append (list (number-name i "-env-curve") 2))))
+
+;; ----------------------------------------------------------
+;; Write lists in separate parameter textfiles (to Desktop)
+;; ----------------------------------------------------------
+
+(loop for i in param-lsts
+      for n from 1
+      do
+        (with-open-file (stream  
+                         (concatenate 'string "~/Desktop/" 
+                                      (write-to-string n) "-param.txt")
+                         :direction :output
+                         :if-exists :new-version)
+          (format stream  
+                  (format nil 
+                          "~{~a ~a ~a;
+~a
+~a ~a;
+~a ~a;
+~a ~a ~a ~a ~a; 
+~a ~a ~a ~a ~a;
+~a ~a;
+~a ~a;
+~a ~a~^;
+~%~}" i))))
+
+;; ----------------------------------------------------------
+;; Spatialisation lists for each cue and instrument
+;; ----------------------------------------------------------
+
+#|
+for spat-lines the duration of each cue has to be added to the 
+x/y-position of each sound source (1-8)
+|#
+
+;; fixed positions for instruments direct out
+(setf dir-ch '((0 150) (50 200) (150 200) (200 150)))
+
+#|
+FL  Vn2  FC  Vla  FR
+
+Vn1               Vc
+
+CL                CR
+
+
+
+RL         RC     RR
+|#
+
+;; all speaker positions in an octophonic plane
+(assign-variable 'pos
+                 (setf all-positions 
+                       '((0 200) ; FL / 1
+                         (100 200) ; FC / 2
+                         (200 200) ; FR / 3
+                         (200 100) ; CR / 4
+                         (200 0) ; RR / 5
+                         (100 0) ; RC / 6
+                         (0 0) ; RL / 7
+                         (0 100); CL / 8
+                         )))
+
+;; 4ch positions: FL, FR, RR, RL
+(setf odd-positions
+      (list pos1 pos3 pos5 pos7))
+
+;; center positions: FC, CR, RC, CL
+(setf even-positions
+      (list pos2 pos4 pos6 pos8))
+
+;; cues per section
+;; (to make sure, each cue per instrument has it's
+;; own spatialisation point/movement
+(setf no-cues-sec
+      (let ((fvoc (first (matrix-transpose all-durs))))
+            (loop for i in fvoc
+                  collect (length i))))
+;; (4 5 7 10 14 9 6 4) = 59 cues
+
+;; function for calculating the starting cue in each section
+(defun start-cue-section (lst &optional (start 0))
+  (loop for i in
+          (loop for j from 0 to (- (length lst) 1)
+                collect
+                  (loop for k from 0 to (- j 1)
+                        collect (nth k lst) into reslis
+                        finally (return (reduce #'+ reslis))))
+        collect (+ i start)))
+
+;; starting cues in each section (lines in qlist)
+(setf start-cues (start-cue-section no-cues-sec))
+;; test (difference start-cues)
+                         
+;; ----------------------------------------------------------
+;; Spatialisation lists for each section
+;; Synthesis channels 5-8
+;; ----------------------------------------------------------
+
+;; Spatialisation section 1, 4 steps
+;; rotation clockwise
+(loop for i in
+(setf spat-section1
+      (let* ((reps (nth 0 no-cues-sec)) 
+             ;; no of cues in section 1
+             (ch5-8 (loop repeat reps
+                          for i from -1 downto -4
+                          collect 
+                            (gen-rotate i odd-positions)))
+             (ch1-4 (loop for i in dir-ch collect
+                            (loop repeat reps 
+                                  collect i))))
+        (append ch1-4 ch5-8)))
+collect (length i))
+
+;; Spatialisation section 2, 5 steps
+(loop for i in
+ (setf spat-section2
+       (let* ((reps (nth 1 no-cues-sec))
+              (ch5-8 (loop repeat reps
+                           for i from 1 to 7 by 2
+                           collect
+                             (loop for j in '(5 3 7 5 1) 
+                                   ;; positions
+                                   collect
+                                     (nth 
+                                      (mod (+ (1- i) (1- j)) 8) 
+                                      all-positions))))
+              (ch1-4 (loop for i in dir-ch collect
+                             (loop repeat reps 
+                                   collect i))))
+         (append ch1-4 ch5-8)))
+collect (length i))
+
+;; Spatialisation section 3, 8 steps
+;; rotations counter clockwise
+(loop for i in
+ (setf spat-section3
+       (let* 
+           ((reps (+ 1 (nth 2 no-cues-sec)))
+            ;; one more cue than calculated
+            (ch5-8 (loop for i from 0 to 3
+                         collect
+                           (gen-repeat 
+                            2
+                            (gen-rotate 
+                             i 
+                             (reverse odd-positions)))))
+            (ch1-4 (loop for i in dir-ch collect
+                           (loop repeat reps 
+                                 collect i))))
+         (append ch1-4 ch5-8)))
+collect (length i))
+
+;; Spatialisation section 4, 10 steps
+;; random
+(loop for i in
+ (setf spat-section4
+       (let* ((reps (nth 3 no-cues-sec))
+              (rnd-pos 
+               (pair-up 
+                (xy-plot 
+                 (flatten 
+                  (rnd-sample reps odd-positions
+                              :norep t
+                              :seed 1977))
+                 :join-points t :point-radius 2)))  
+              (ch5-8 (loop for i from -1 downto -4
+                           collect (gen-rotate i rnd-pos)))
+              (ch1-4 (loop for i in dir-ch collect
+                             (loop repeat reps 
+                                   collect i))))
+         (append ch1-4 ch5-8)))
+collect (length i))
+
+;; Spatialisation section 5, 14 steps
+;; random with different seed for all channels!
+(loop for i in
+ (setf spat-section5
+       (let* ((reps (nth 4 no-cues-sec))
+              (ch5-8 (gen-loop 
+                      4
+                      (rnd-sample 14 odd-positions 
+                                  :norep t)
+                      :seed 1986))
+              (ch1-4 (loop for i in dir-ch collect
+                             (loop repeat reps 
+                                   collect i))))
+         (append ch1-4 ch5-8)))
+collect (length i))
+
+;; Spatialisation section 6, 8 steps
+;; 4 x diagonal - right
+(loop for i in
+(setf spat-section6
+      (let* ((reps (- (nth 5 no-cues-sec) 1))
+             ;; one cue less than calculated
+             ;; see section 3
+             (ch5-8 (loop with pos = 
+                            (list pos5 pos7 
+                                  pos3 pos5 
+                                  pos1 pos3 
+                                  pos7 pos1)
+                          for i from 0 to 6 by 2
+                          collect (gen-rotate i pos)))
+             (ch1-4 (loop for i in dir-ch collect
+                            (loop repeat reps 
+                                  collect i))))
+        (append ch1-4 ch5-8)))
+collect (length i))
+
+;; Spatialisation section 7, 6 steps
+;; 1-4 right rotation, 5-8 left rotation
+(loop for i in
+(setf spat-section7
+      (let* ((reps (nth 6 no-cues-sec))
+             (ch5 (list (subseq 
+                         (gen-repeat 2 odd-positions) 0 6))) 
+             (ch7 (list
+                   (subseq 
+                    (gen-repeat 2 odd-positions) 2 8)))
+             (ch6 (list 
+                   (subseq 
+                    (gen-repeat 2 (reverse odd-positions)) 
+                    2 8)))
+             (ch8 (list 
+                   (subseq 
+                    (gen-repeat 2 (reverse odd-positions)) 
+                    1 7)))
+             (ch1-4 (loop for i in dir-ch collect
+                            (loop repeat reps 
+                                  collect i))))
+        (append ch1-4 ch5 ch6 ch7 ch8)))
+collect (length i))
+
+;; Spatialisation section 8, 4 steps
+;; direct out one rotation clockwise
+;; synthesis to even positions and stop
+(loop for i in
+(setf spat-section8
+      (let* ((reps (nth 7 no-cues-sec))
+             (ch1-4 (loop repeat reps
+                          for i from -1 downto -4
+                          collect 
+                            (gen-rotate i odd-positions)))
+             (ch5-8 (loop for i in even-positions
+                            collect (gen-repeat 4 (list i)))))
+        (append ch1-4 ch5-8)))
+collect (length i))
+
+;; all spat sections for ch 1 - 8
+(length
+(setf spat-sections-ch
+      (matrix-transpose
+      (list spat-section1 spat-section2 spat-section3
+            spat-section4 spat-section5 spat-section6
+            spat-section7 spat-section8))))
+
+;; check if all lists have the same amount of cues (59)
+(loop for i in spat-sections-ch 
+      collect
+        (length
+      (loop for j in i
+            append j)))
+;; (59 59 59 59 59 59 59 59)
+
+;; spat lists for channels 1 - 8
+(setf spat-channels
+(loop for i in spat-sections-ch 
+      collect
+      (loop for j in i
+            append j)))
+
+;; ----------------------------------------------------------
+;; Write lists in separate spatialisation textfiles
+;; ----------------------------------------------------------
+
+;; combine cue number as comment, leading number 0 (because
+;; the automatic sequencing is oberwritten by the delays in
+;; milliseconds from the duration qlists) and the position
+;; in x/y values
+(setf spat-lsts
+      (loop for i from 1 to 8 ; count for 8 channels
+            for j in spat-channels 
+            ;; loop in x/y positions for each channel
+            collect 
+              (loop 
+                 for l in j ; loop in each channel
+                 for k from 1 ; cue number
+                 append (list '\# 'Cue k) ; cue comment
+                 collect 0 ; leading argument
+                 append (cons (number-name i "-spat") l)
+                   ;; position in x/y values
+                   )))
+
+;; write the spat qlist files for chann 1-8 to desktop
+(loop for i in spat-lsts
+      for n from 1
+      do
+        (with-open-file 
+            (stream  
+             (concatenate 'string "~/Desktop/" 
+                          (write-to-string n) "-spat.txt")
+             :direction :output
+             :if-exists :new-version)
+          (format stream  
+                  (format nil 
+                          "~{~a ~a ~a;
+~a
+~a ~a ~a~^;
+~%~}" i))))

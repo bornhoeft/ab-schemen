@@ -1,0 +1,235 @@
+# cue 1;
+0
+1-spat 0 150;
+
+# cue 2;
+0
+1-spat 0 150;
+
+# cue 3;
+0
+1-spat 0 150;
+
+# cue 4;
+0
+1-spat 0 150;
+
+# cue 5;
+0
+1-spat 0 150;
+
+# cue 6;
+0
+1-spat 0 150;
+
+# cue 7;
+0
+1-spat 0 150;
+
+# cue 8;
+0
+1-spat 0 150;
+
+# cue 9;
+0
+1-spat 0 150;
+
+# cue 10;
+0
+1-spat 0 150;
+
+# cue 11;
+0
+1-spat 0 150;
+
+# cue 12;
+0
+1-spat 0 150;
+
+# cue 13;
+0
+1-spat 0 150;
+
+# cue 14;
+0
+1-spat 0 150;
+
+# cue 15;
+0
+1-spat 0 150;
+
+# cue 16;
+0
+1-spat 0 150;
+
+# cue 17;
+0
+1-spat 0 150;
+
+# cue 18;
+0
+1-spat 0 150;
+
+# cue 19;
+0
+1-spat 0 150;
+
+# cue 20;
+0
+1-spat 0 150;
+
+# cue 21;
+0
+1-spat 0 150;
+
+# cue 22;
+0
+1-spat 0 150;
+
+# cue 23;
+0
+1-spat 0 150;
+
+# cue 24;
+0
+1-spat 0 150;
+
+# cue 25;
+0
+1-spat 0 150;
+
+# cue 26;
+0
+1-spat 0 150;
+
+# cue 27;
+0
+1-spat 0 150;
+
+# cue 28;
+0
+1-spat 0 150;
+
+# cue 29;
+0
+1-spat 0 150;
+
+# cue 30;
+0
+1-spat 0 150;
+
+# cue 31;
+0
+1-spat 0 150;
+
+# cue 32;
+0
+1-spat 0 150;
+
+# cue 33;
+0
+1-spat 0 150;
+
+# cue 34;
+0
+1-spat 0 150;
+
+# cue 35;
+0
+1-spat 0 150;
+
+# cue 36;
+0
+1-spat 0 150;
+
+# cue 37;
+0
+1-spat 0 150;
+
+# cue 38;
+0
+1-spat 0 150;
+
+# cue 39;
+0
+1-spat 0 150;
+
+# cue 40;
+0
+1-spat 0 150;
+
+# cue 41;
+0
+1-spat 0 150;
+
+# cue 42;
+0
+1-spat 0 150;
+
+# cue 43;
+0
+1-spat 0 150;
+
+# cue 44;
+0
+1-spat 0 150;
+
+# cue 45;
+0
+1-spat 0 150;
+
+# cue 46;
+0
+1-spat 0 150;
+
+# cue 47;
+0
+1-spat 0 150;
+
+# cue 48;
+0
+1-spat 0 150;
+
+# cue 49;
+0
+1-spat 0 150;
+
+# cue 50;
+0
+1-spat 0 150;
+
+# cue 51;
+0
+1-spat 0 150;
+
+# cue 52;
+0
+1-spat 0 150;
+
+# cue 53;
+0
+1-spat 0 150;
+
+# cue 54;
+0
+1-spat 0 150;
+
+# cue 55;
+0
+1-spat 0 150;
+
+# cue 56;
+0
+1-spat 200 200;
+
+# cue 57;
+0
+1-spat 200 0;
+
+# cue 58;
+0
+1-spat 0 0;
+
+# cue 59;
+0
+1-spat 0 200
