@@ -1,6 +1,6 @@
 #N canvas 748 249 590 502 12;
 #X msg 183 375 label \$1;
-#X obj 10 66 cnv 15 150 25 empty \$1-cue_canvas Cue-1 30 10 0 20 #9f9f9f #000000 0;
+#X obj 10 66 cnv 15 150 25 empty \$1-cue_canvas Cue-0 30 10 0 20 #9f9f9f #000000 0;
 #X obj 257 444 nbx 5 20 0 999 0 0 \$1-setq dont-send Set\ Cue -55 10 0 12 #feffff #000000 #000000 0 256;
 #X obj 10 10 cnv 15 150 15 empty empty \$1\\\ cuelist 45 8 0 11 #404040 #ffffff 0;
 #X obj 325 191 r #;
@@ -336,8 +336,6 @@
 #X obj 81 334 s \$1-dur;
 #X obj 81 208 r \$1-wait;
 #X text 40 165 recieve duration an line for each cue from \$2-qlist.txt:, f 28;
-#N canvas 266 291 450 300 spatialization 0;
-#X restore 40 448 pd spatialization;
 #X obj 183 346 makefilename Cue-%d;
 #X text 296 408 Cue number in canvas (see above);
 #X obj 199 293 s \$1-line-cue;
@@ -346,9 +344,9 @@
 #X connect 14 0 15 0;
 #X connect 15 0 16 0;
 #X connect 15 1 17 0;
-#X connect 15 1 24 0;
+#X connect 15 1 23 0;
 #X connect 16 0 18 0;
-#X connect 17 0 22 0;
+#X connect 17 0 21 0;
 #X connect 19 0 14 0;
-#X connect 22 0 0 0;
+#X connect 21 0 0 0;
 #X coords 0 -1 1 1 150 80 2 10 10;
