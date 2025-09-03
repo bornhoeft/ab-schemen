@@ -17,6 +17,7 @@
 *.wx32fsl
 
 # ignore mac desktop files
+*.DS_Store
 .DS_Store
 
 # ignore temporary Opusmodus files
