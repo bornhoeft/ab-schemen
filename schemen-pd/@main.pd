@@ -1,10 +1,10 @@
-#N struct 5245-controller float x0 float y0 float id float color;
+#N struct 6394-controller float x0 float y0 float id float color;
 #N canvas 659 205 796 726 12;
 #X declare -path abs;
 #X declare -path abs/spat-control;
 #X declare -path qlists;
 #X declare -path rec;
-#N canvas 435 223 1143 748 schemen 1;
+#N canvas 366 192 1143 748 schemen 1;
 #N canvas 785 316 200 273 block-keys 0;
 #X obj 50 150 tgl 15 0 block-dummy-s block-dummy-r block_keys\ (alt/option-b) 20 8 0 12 #b8b8b8 #fc0400 #000000 0 1;
 #X obj 50 177 expr ($f1-1)*-1;
