@@ -13,22 +13,22 @@ https://bornhoeft.org/works/schemen
 
 (Version Pd 0.56-2 Vanilla)<br>
 Live Electronics for String quartet no. 4<br>
-Schemen (2023-2025)<br>
+<strong>Schemen (2023-2025)</strong><br>
 Achim Bornhoeft © 2023<br>
 <br>
 <br>
-1. Duration
+1. Duration:<br>
 Set the overall duration of the piece:
 min.secs e.g. 23.45 (default: 21 min 20 sec)
 
-2. Channels:
+2. Channels:<br>
 Switch between 4 in / 2 out (0/ON) and 4 in / 4 out (1/OFF)
 
-3.  Audio:
+3.  Audio:<br>
 Switch (Shift-M) DSP on & Fader default positions (1/ON)
 and DSP off & Fader to 0 (0/OFF/Mute)
 
-4. Start:
+4. Start:<br>
 Start sequencing (Spacebar) from the beginning (1/ON).
 After stopping (0/OFF) , the sequence starts from the beginning
 OR from the chosen rehearsal mark (number 1 to 8)
