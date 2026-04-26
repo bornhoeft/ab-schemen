@@ -12,11 +12,11 @@ https://bornhoeft.org/works/schemen
 ## Pure Data - Live Electronics Patch
 
 (Version Pd 0.56-2 Vanilla)<br>
-Live Electronics for<br>
+Live Electronics for String quartet no. 4<br>
 Schemen (2023-2025)<br>
-String quartet no. 4<br>
-Achim Bornhoeft © 2023
-
+Achim Bornhoeft © 2023<br>
+<br>
+<br>
 1. Duration
 Set the overall duration of the piece:
 min.secs e.g. 23.45 (default: 21 min 20 sec)
