@@ -11,11 +11,11 @@ https://bornhoeft.org/works/schemen
 
 ## Pure Data - Live Electronics Patch
 
-(Version Pd 0.56-2 Vanilla)
-Live Electronics for
+(Version Pd 0.56-2 Vanilla)<br>
+Live Electronics for<br>
+Schemen (2023-2025)<br>
+String quartet no. 4<br>
 Achim Bornhoeft © 2023
-Schemen (2023-2025)
-String quartet no. 4
 
 1. Duration
 Set the overall duration of the piece:
