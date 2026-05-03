@@ -40,14 +40,14 @@ min.secs e.g. 23.45 (default: 21 min 20 sec)
 Switch between 4 in / 2 out (0) and 4 in / 4 out (1)
 
 3.  Audio:<br>
-Switch (Shift-M) between DSP on & Fader default positions (1/ON);
+Switch (Shift-M) between DSP on & Fader default positions (1/ON)<br>
 and DSP off & Fader to 0 (0/OFF/Mute)
 
 5. Start:<br>
-Start sequencing (Spacebar) from the beginning (1/ON).
-After stopping (0/OFF), enter the desired rehearsal marker from
-which to continue rehearsing and press the start toggle (1/ON)
-or the spacebar to start the sequencing from that point in the score.
+Start sequencing (Spacebar) from the beginning (1/ON).<br>
+After stopping (0/OFF), enter the desired rehearsal marker from<br>
+which to continue rehearsing and press the start toggle (1/ON)<br>
+or the spacebar to start the sequencing from that point in the score.<br>
 If no rehearsal mark is set the patch starts from the beginning.
 
 <img width="911" height="866" alt="Bildschirmfoto 2026-04-26 um 14 23 15" src="https://github.com/user-attachments/assets/9194eb77-d71d-4071-ae99-6d1d52325944" />
