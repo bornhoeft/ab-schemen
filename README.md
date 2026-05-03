@@ -23,7 +23,7 @@ Other tempos are also possible:<br>
 -	MM 5 = 25 minutes 36 seconds
 -	MM 4 = 32 minutes<br>
 The entire piece should be played with a practice mute (Hotel Silencer).<br>
-<br>
+
 ## Pure Data - Live Electronics Patch
 
 (Version Pd 0.56-2 Vanilla)<br>
