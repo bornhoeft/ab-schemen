@@ -19,9 +19,9 @@ The total duration has been set to 32 bars in 4/4 at MM 6. This corresponds to 2
 <br>
 Other tempos are also possible:<br>
 - MM 8 = 16 minutes
--	MM 7.5 = 17 minutes 4 seconds
--	MM 5 = 25 minutes 36 seconds
--	MM 4 = 32 minutes
+- MM 7.5 = 17 minutes 4 seconds
+- MM 5 = 25 minutes 36 seconds
+- MM 4 = 32 minutes
 
 The entire piece should be played with a practice mute (Hotel Silencer).
 
