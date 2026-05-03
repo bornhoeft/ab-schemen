@@ -11,7 +11,8 @@ https://bornhoeft.org/works/schemen
 
 ## Instructions
 
-The piece was conceived using the first 32 bars of the second movement (Andante con moto, “Death and the Maiden”) from Franz Schubert’s String Quartet No. 14 in D minor (D. 810).<br>
+The piece was conceived using the first 32 bars of the second movement (Andante con moto, “Death and the Maiden”)<br> 
+from Franz Schubert’s String Quartet No. 14 in D minor (D. 810).<br>
 However, it can be performed using any 32 bars from a four-part movement in 4/4 bars.<br>
 <br>
 The total duration has been set at 32 bars in 4/4 at MM 6. This corresponds to 21 minutes 20 seconds.<br>
