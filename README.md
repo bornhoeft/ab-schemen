@@ -1,7 +1,7 @@
 # ab-schemen
 Computer-assisted composition:<br> 
-(Opusmodus Version 4.0.30110) 
-
+Opusmodus (Version 4.0.31126)<br>
+<br>
 Live-Electronics:<br>
 Pure Data (Pd 0.56-2)<br>
 <br>
