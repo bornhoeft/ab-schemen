@@ -34,7 +34,7 @@ Achim Bornhoeft © 2023<br>
 <br>
 1. Duration:<br>
 Set the overall duration of the piece:
-min.secs e.g. 23.45 (default: 21 min 20 sec)
+min.secs e.g. 12.34 (default: 21 min 20 sec)
 
 2. Channels:<br>
 Switch between 4 in / 2 out (0) and 4 in / 4 out (1)
