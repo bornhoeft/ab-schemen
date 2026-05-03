@@ -1,0 +1,28 @@
+Pure Data patch;
+(Version Pd 0.55.2 Vanilla);
+Live Electronics for String quartet no. 4;
+Schemen (2023-2025);
+Achim Bornhoeft © 2025;
+;
+Further informations available at:;
+www.bornhoeft.org/works/schemen;
+;
+USAGE:;
+;
+1. Duration:;
+Set the overall duration of the piece:;
+min.secs e.g. 23.45 (default: 21 min 20 sec);
+;
+2. Channels:;
+Switch between 4 in / 2 out (0) and 4 in / 4 out (1);
+;
+3. Audio:;
+Switch (Shift-M) between DSP on & Fader default positions (1/ON);
+and DSP off & Fader to 0 (0/OFF/Mute);
+;
+4. Start:;
+Start sequencing (Spacebar) from the beginning (1/ON).;
+After stopping (0/OFF), enter the desired rehearsal marker from ; 
+which to continue rehearsing and press the start toggle (1/ON); 
+or the spacebar to start the sequencing from that point in the score.;
+If no rehearsal mark is set the patch starts from the beginning.
