@@ -32,7 +32,6 @@ Live Electronics for String quartet no. 4<br>
 <strong>Schemen (2023-2025)</strong><br>
 Achim Bornhoeft © 2023<br>
 <br>
-<br>
 1. Duration:<br>
 Set the overall duration of the piece:
 min.secs e.g. 23.45 (default: 21 min 20 sec)
