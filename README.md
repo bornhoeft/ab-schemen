@@ -1,5 +1,5 @@
 # ab-schemen
-[Computer-assisted composition](https://duckduckgo.com):<br> 
+[Computer-assisted composition]([https://duckduckgo.com](https://github.com/bornhoeft/ab-schemen/tree/main/opmo)):<br> 
 Opusmodus (Version 4.0.31126)<br>
 <br>
 Live-Electronics:<br>
