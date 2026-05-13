@@ -1,9 +1,9 @@
 # ab-schemen
-[Computer-assisted composition]([https://duckduckgo.com](https://github.com/bornhoeft/ab-schemen/tree/main/opmo)):<br> 
+[Computer-assisted composition](https://github.com/bornhoeft/ab-schemen/tree/main/opmo):<br> 
 Opusmodus (Version 4.0.31126)<br>
 <br>
 Live-Electronics:<br>
-Pure Data (Pd 0.56-2)<br>
+[Pure Data](https://github.com/bornhoeft/ab-schemen/tree/main/pd) (Pd 0.56-2)<br>
 <br>
 https://bornhoeft.org/works/schemen
 
