@@ -1,5 +1,5 @@
 # ab-schemen
-Computer-assisted composition:<br> 
+[Computer-assisted composition](https://duckduckgo.com):<br> 
 Opusmodus (Version 4.0.31126)<br>
 <br>
 Live-Electronics:<br>
