@@ -4,15 +4,15 @@ Achim Bornhoeft
 2023 – 2025<br>
 str qt | live elec (4ch)<br>
 00:21:20<br>
-https://bornhoeft.org/works/schemen
+[https://bornhoeft.org/works/schemen](https://bornhoeft.org/works/schemen)
 
 ----
 
 Computer-assisted composition:<br>
-Opusmodus (Version 4.0.31126)<br>
+[Opusmodus](https://opusmodus.com) (Version 4.0.31126)<br>
 <br>
 Live-Electronics:<br>
-Pure Data (Pd 0.56-2)<br>
+[Pure Data](https://puredata.info) (Pd 0.56-2)<br>
 
 ----
 
