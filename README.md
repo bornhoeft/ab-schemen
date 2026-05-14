@@ -5,7 +5,6 @@ Achim Bornhoeft
 str qt | live elec (4ch)<br>
 00:21:20<br>
 https://bornhoeft.org/works/schemen<br>
-<br>
 
 ----
 
@@ -14,7 +13,6 @@ Opusmodus (Version 4.0.31126)<br>
 <br>
 Live-Electronics:<br>
 Pure Data (Pd 0.56-2)<br>
-<br>
 
 ----
 
