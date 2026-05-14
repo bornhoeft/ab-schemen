@@ -8,7 +8,13 @@ https://bornhoeft.org/works/schemen
 
 ---
 
-## Instructions
+## Pure Data - Live Electronics Patch
+
+(Version Pd 0.56-2 Vanilla)<br>
+Live Electronics for String quartet no. 4<br>
+<strong>Schemen (2023-2025)</strong><br>
+Achim Bornhoeft © 2023<br>
+<br>
 
 The piece was conceived using the first 32 bars of the second movement (Andante con moto, “Death and the Maiden”)
 from Franz Schubert’s String Quartet No. 14 in D minor (D. 810).
@@ -24,13 +30,8 @@ Other tempos are also possible:<br>
 
 The entire piece should be played with a practice mute (Hotel Silencer).
 
-## Pure Data - Live Electronics Patch
+## Instructions
 
-(Version Pd 0.56-2 Vanilla)<br>
-Live Electronics for String quartet no. 4<br>
-<strong>Schemen (2023-2025)</strong><br>
-Achim Bornhoeft © 2023<br>
-<br>
 1. Duration:<br>
 Set the overall duration of the piece:
 min.secs e.g. 12.34 (default: 21 min 20 sec)
