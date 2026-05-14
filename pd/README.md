@@ -10,10 +10,10 @@ https://bornhoeft.org/works/schemen
 
 ## Pure Data - Live Electronics Patch
 
-(Version Pd 0.56-2 Vanilla)<br>
 Live Electronics for String quartet no. 4<br>
 <strong>Schemen (2023-2025)</strong><br>
 Achim Bornhoeft © 2023<br>
+(Version Pd 0.56-2 Vanilla)<br>
 <br>
 
 The piece was conceived using the first 32 bars of the second movement (Andante con moto, “Death and the Maiden”)
