@@ -4,8 +4,15 @@ Achim Bornhoeft
 2023 – 2025<br>
 str qt | live elec (4ch)<br>
 00:21:20<br>
-<br>
-<br>
+
+Computer-assisted composition:
+Opusmodus (Version 4.0.31126)
+
+Live-Electronics:
+Pure Data (Pd 0.56-2)
+
+https://bornhoeft.org/works/schemen
+
 In the summer of 2023, I had the idea of playing an iconic work of music history extremely slowly and quietly, projecting only excerpts of it electronically into the room in a modified form.<br>
 <br>
 Because of its structural simplicity, I used the first 32 bars of the second movement (Andante con moto, ‘Death and the Maiden’) from Franz Schubert’s String Quartet No. 14 in D minor (D. 810).<br>
