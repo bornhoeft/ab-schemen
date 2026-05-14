@@ -1,10 +1,9 @@
 Achim Bornhoeft
-### Schemen (string quartet no.4)
+### [Schemen (string quartet no.4)](https://bornhoeft.org/works/schemen)
 <br>
 2023 – 2025<br>
 str qt | live elec (4ch)<br>
-00:21:20<br>
-[https://bornhoeft.org/works/schemen](https://bornhoeft.org/works/schemen)
+00:21:20
 
 ----
 
