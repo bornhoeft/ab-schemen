@@ -1,17 +1,17 @@
 Achim Bornhoeft
 ### Schemen (string quartet no.4)
-
+<br>
 2023 – 2025<br>
 str qt | live elec (4ch)<br>
 00:21:20<br>
-https://bornhoeft.org/works/schemen
-
+https://bornhoeft.org/works/schemen<br>
+<br>
 Computer-assisted composition:<br>
-Opusmodus (Version 4.0.31126)
+Opusmodus (Version 4.0.31126)<br>
 
 Live-Electronics:<br>
-Pure Data (Pd 0.56-2)
-
+Pure Data (Pd 0.56-2)<br>
+<br>
 In the summer of 2023, I had the idea of playing an iconic work of music history extremely slowly and quietly, projecting only excerpts of it electronically into the room in a modified form.<br>
 
 Because of its structural simplicity, I used the first 32 bars of the second movement (Andante con moto, ‘Death and the Maiden’) from Franz Schubert’s String Quartet No. 14 in D minor (D. 810).<br>
