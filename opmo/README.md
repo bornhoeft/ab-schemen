@@ -17,32 +17,31 @@ Opusmodus (Version 4.0.31126)
 
 ---
 
-This document creates the following qlist text files for 
-sequencing in Pure Data:
+This document creates the following qlist text files for sequencing in Pure Data:
 
 4 files for each voice with the durations between each cue:
 
-1-qlist.txt
-2-qlist.txt
-3-qlist.txt
-4-qlist.txt
+- 1-qlist.txt
+- 2-qlist.txt
+- 3-qlist.txt
+- 4-qlist.txt
 
-4 files for each voice with the parameter settings per cue
+4 files for each voice with the parameter settings per cue:
 
-1-param.txt
-2-param.txt
-3-param.txt
-4-param.txt
+- 1-param.txt
+- 2-param.txt
+- 3-param.txt
+- 4-param.txt
 
 8 files for spatialisation of 
 4 direct sound sources and
-4 processed sound sources.
+4 processed sound sources:
 
-1-spat.txt
-2-spat.txt
-3-spat.txt
-4-spat.txt
-5-spat.txt
-6-spat.txt
-7-spat.txt
-8-spat.txt
+- 1-spat.txt
+- 2-spat.txt
+- 3-spat.txt
+- 4-spat.txt
+- 5-spat.txt
+- 6-spat.txt
+- 7-spat.txt
+- 8-spat.txt
