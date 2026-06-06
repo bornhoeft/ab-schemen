@@ -496,7 +496,8 @@ duration envelopes:
  (setf synth-mix
        (loop for i in durlens
              for c in '(0.4 0.5 0.6 0.7)
-             collect (gen-sigmoid i :center c)))
+             collect (vector-scale 0.0 0.9
+                                 (gen-sigmoid i :center c))))
 :point-radius 2 :join-points t)
 
 ;; ----------------------------------------------------------
@@ -548,7 +549,7 @@ duration envelopes:
  (loop with seed = (init-seed 345)
        for i in durlens
        collect
-         (vector-scale 2.5 0.5
+         (vector-scale 2 0.25
          (gen-tendency 
           i mod-partials :variance 0.3))))
  :zero-based t :join-points t)
