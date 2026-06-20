@@ -442,7 +442,7 @@ duration envelopes:
        (loop with seed = (init-seed 123)
              for i in durlens
              collect
-               (vector-scale 0.3 1
+               (vector-scale 0.4 1
                (normalize
                 ;; since gen-tendency produces values >1
                 ;; each envelope has to be normalized
@@ -603,7 +603,7 @@ duration envelopes:
                                (format nil "~,2F"
                                        (nth s mp2))) 
                               (nth s fi)
-                              (rndn 4 8))
+                              (rndn 3 8))
                  ;; filter-q for the vcf~ (noise synthesis)
                  append (list (number-name i "-noise-q") (nth s nq))
                  ;; mix between osc~ (0) and vcf~ (1) synthesis
